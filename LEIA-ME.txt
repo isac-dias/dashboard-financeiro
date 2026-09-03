@@ -1,0 +1,21 @@
+MEU DASHBOARD FINANCEIRO - PWA
+
+ARQUIVOS:
+- index.html: seu sistema convertido para PWA
+- manifest.json: configurações do aplicativo
+- service-worker.js: cache e funcionamento offline
+- icons/: ícones do aplicativo
+
+IMPORTANTE:
+Não abra o index.html diretamente pelo Windows para testar o PWA.
+O Service Worker precisa ser executado por HTTP/HTTPS.
+
+PARA TESTAR:
+1. Hospede os arquivos em um servidor HTTPS.
+2. Abra o link no Chrome do Android.
+3. No menu do Chrome, escolha "Instalar aplicativo" ou "Adicionar à tela inicial".
+
+As bibliotecas Chart.js e SheetJS foram alteradas para CDN. Após a primeira abertura com internet,
+o Service Worker poderá armazenar recursos utilizados no cache.
+
+Para publicação, você pode usar GitHub Pages, Netlify, Vercel ou outro serviço de hospedagem HTTPS.
